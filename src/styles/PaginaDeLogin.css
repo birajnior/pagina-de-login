@@ -1,101 +1,10 @@
 /* Estilos do container principal */
-.container-login {
-    display: flex;
-    background-color: var(--cinza-escuro);
-    padding: 3.5em 5em;
-    border-radius: 32px;
-    gap: 3em;
-}
 
-.container-login form {
-    margin: 0 14.5px;
-    font-size: 18px;
-    font-weight: 400;
-}
-
-/* Estilos do titulo */
-.form__titulo {
-    font-size: 31px;
-    font-weight: 600;
-}
-
-/* Estilos do subtitulo */
-.form__texto {
-    margin: 1.5em 0 2.5em 0;
-    font-weight: 400;
-    font-size: 22px;
-}
 
 /* Estilos do campo de seleção */
-.form__campo-checkbox {
-    margin-right: 0.5em;
-    width: 20px;
-    height: 20px;
-    position: relative;
-    background-color: none;
-    border: 2px solid var(--cinza-claro);
-}
-
-.form__campo-checkbox label {
-    cursor: pointer;
-    position: absolute;
-    left: -1px;
-    top: -2px;
-}
-
-.form__campo-checkbox label::after {
-    content: '';
-    width: 7px;
-    height: 4px;
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    border: 3px solid var(--verde-destaque);
-    border-top: none;
-    border-right: none;
-    background: transparent;
-    opacity: 0;
-    transform: rotate(-45deg);
-}
-
-.form__campo-checkbox label:hover::after {
-    opacity: 0.3;
-}
-
-.form__campo-checkbox input[type=checkbox] {
-    visibility: hidden;
-}
-
-.form__campo-checkbox input[type=checkbox]:checked+label::after {
-    opacity: 1;
-}
 
 /* Estilos do botão */
-.form__botao {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: .5em;
-    color: var(--verde-petroleo);
-    background-color: var(--verde-destaque);
-    width: 100%;
-    padding: 12px 16px 12px 16px;
-    border-radius: 8px;
-    border: none;
-    font-family: var(--fonte);
-    font-size: 18px;
-    font-weight: 600;
-    margin: 2em 0;
-}
 
-.form__botao::after {
-    content: ' ';
-    width: 25px;
-    height: 20px;
-    background-image: url('../img/flecha.svg');
-    background-repeat: no-repeat;
-    background-size: 1em;
-}
 
 /* Estilos das opções / fieldset */
 .form__opcoes {

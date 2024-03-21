@@ -1,0 +1,77 @@
+.container-login {
+  display: flex;
+  background-color: var(--cinza-escuro);
+  padding: 3.5em 5em;
+  border-radius: 32px;
+  gap: 3em;
+}
+
+.container-login form {
+  margin: 0 14.5px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.form__campo-checkbox {
+  margin-right: 0.5em;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  background-color: none;
+  border: 2px solid var(--cinza-claro);
+}
+
+.form__campo-checkbox label {
+  cursor: pointer;
+  position: absolute;
+  left: -1px;
+  top: -2px;
+}
+
+.form__campo-checkbox label::after {
+  content: '';
+  width: 7px;
+  height: 4px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border: 3px solid var(--verde-destaque);
+  border-top: none;
+  border-right: none;
+  background: transparent;
+  opacity: 0;
+  transform: rotate(-45deg);
+}
+
+.form__campo-checkbox label:hover::after {
+  opacity: 0.3;
+}
+
+.form__campo-checkbox input[type=checkbox] {
+  visibility: hidden;
+}
+
+.form__campo-checkbox input[type=checkbox]:checked+label::after {
+  opacity: 1;
+}
+
+.form__opcoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  margin-top: .5em;
+  border: none;
+}
+
+.form__opcoes a {
+  color: var(--offwhite);
+  font-family: Prompt;
+  text-align: right;
+  font-size: 15px;
+}
+
+/* Estilo do texto do formulário: lembrar-me */
+.form__opcoes-texto {
+  flex-grow: 2;
+}
