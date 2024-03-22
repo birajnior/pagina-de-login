@@ -13,6 +13,7 @@
   font-size: 18px;
   font-weight: 600;
   margin: 2em 0;
+  cursor: pointer;
 }
 
 .form__botao::after {

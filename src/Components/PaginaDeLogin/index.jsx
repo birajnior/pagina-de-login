@@ -4,16 +4,31 @@ import Subtitulo from "../Subtitulo";
 import CampoDeDigitacao from "../CampoDeDigitacao";
 import Botao from "../Botao";
 import { useState } from "react";
+import Texto from "../Texto";
+import RedesSociais from "../RedesSociais";
+import Links from "../Links";
 
 const PaginaDeLogin = () => {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
 
   const handleSubmit = (event) => {
-    event.preventDefault()
+    event.preventDefault();
     console.log("email " + email);
-    console.log("senh "+ senha);
-  }
+    console.log("senh " + senha);
+  };
+
+  const Checkbox = () => {
+    return (
+      <>
+        <div className="form__campo-checkbox">
+          <input type="checkbox" id="lembrar" />
+          <label htmlFor="lembrar" />
+        </div>
+        <p className="form__opcoes-texto">Lembrar-me</p>
+      </>
+    );
+  };
 
   return (
     <div className="container-login">
@@ -39,8 +54,27 @@ const PaginaDeLogin = () => {
             value={senha}
             setValor={setSenha}
           />
+          <fieldset className="form__opcoes">
+            <Checkbox />
+            <p>
+              <a href="#" aria-label="Recuperar senha esquecida">
+                Esqueci a senha
+              </a>
+            </p>
+          </fieldset>
           <Botao type="submit">Login</Botao>
         </form>
+        <div className="container-links">
+          <Texto classe="container-links__titulo">
+            ou entre com outras contas
+          </Texto>
+          <ul>
+            <RedesSociais link="http://www.github.com" nome="Github" />
+            <RedesSociais link="accounts.google.com" nome="Google" />
+          </ul>
+          <Texto classe="container-links__texto">Ainda não tem conta?</Texto>
+          <Links>Crie seu cadastro!</Links>
+        </div>
       </section>
     </div>
   );
