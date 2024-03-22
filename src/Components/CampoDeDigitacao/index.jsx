@@ -1,12 +1,25 @@
 import "./Style.css";
 
 // eslint-disable-next-line react/prop-types
-const CampoDeDigitacao = ({ label, type, id, placeholder }) => {
+const CampoDeDigitacao = ({
+  label,
+  type,
+  placeholder,
+  value,
+  setValor,
+}) => {
   return (
     <>
       <div className="form__campo-digitacao">
-        <label htmlFor="email">{label}</label>
-        <input type={type} id={id} placeholder={placeholder} required />
+        <label htmlFor={type}>{label}</label>
+        <input
+          type={type}
+          id={type}
+          placeholder={placeholder}
+          value={value}
+          onChange={(evento) => setValor(evento.target.value)}
+          required
+        />
       </div>
     </>
   );
