@@ -32,10 +32,14 @@ const PaginaDeLogin = () => {
 
   return (
     <div className="container-login">
-      <img
-        src="/img/imagem-login.png"
-        alt="uma mulher negra de cabelos crespos usando óculos e mexendo no computador, também há o logo da codeconnect"
-      />
+      <picture>
+        <source media="(max-width: 768px)" srcSet="/img/imagem-login-M.png" />
+        <source media="(max-width: 360px)" srcSet="/img/imagem-login-P.png" />
+        <img
+          src="/img/imagem-login.png"
+          alt="uma mulher negra de cabelos crespos usando óculos e mexendo no computador, também há o logo da codeconnect"
+        />
+      </picture>
       <section>
         <form onSubmit={handleSubmit}>
           <Titulo>Login</Titulo>

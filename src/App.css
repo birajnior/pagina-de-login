@@ -35,3 +35,12 @@ body {
   align-items: center;
   height: 100%;
 }
+
+/* Small tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    background: url("../img/simbolo.png") left 1rem top no-repeat,
+    url("../img/simbolo.png") right 1rem bottom no-repeat, var(--grafite);
+    height: 100vh;
+  }
+}
