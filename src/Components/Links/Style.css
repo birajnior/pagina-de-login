@@ -1,14 +1,14 @@
 .container-links__link {
   color: var(--verde-destaque);
-  font-size: 18px;
+  font-size: 1.125rem;
   text-decoration: none;
 }
 
 .container-links__link::after {
   display: inline-block;
   content: ' ';
-  width: 30px;
-  height: 20px;
+  width: 1.875rem;
+  height: 1.25rem;
   background-image: url('../img/prancheta.svg');
   background-repeat: no-repeat;
   background-position: center;
