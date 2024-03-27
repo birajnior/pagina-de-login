@@ -1,4 +1,4 @@
-.container-login {
+ .container-login {
   display: flex;
   background-color: var(--cinza-escuro);
   padding: 3.5em 5em;
@@ -70,7 +70,7 @@
   font-family: Prompt;
   text-align: right;
   font-size: 0.9375rem;
-}
+} 
 
 /* Estilo do texto do formulário: lembrar-me */
 .form__opcoes-texto {
@@ -78,10 +78,12 @@
   color: var(--cinza-medio);
 }
 
+
 /* Estilos do container de links / redes sociais */
 .container-links {
   text-align: center;
 }
+
 
 /* Estilos do titulo do container de links */
 .container-links__titulo {
@@ -128,6 +130,7 @@
   font-size: 0.8125rem;
 }
 
+
 /* Estilos do texto do container de links */
 .container-links__texto {
   font-size: 0.9375rem;
@@ -135,22 +138,15 @@
   margin-bottom: 0.9em;
 }
 
-/* Small tablets */
-@media (min-width: 768px) and (max-width: 991px) {
-  .container-login {
-    margin-top: 1.875rem;
-    display: flex;
-    flex-direction: column;
-  }
-  .container-links__titulo {
-    margin-bottom: 0.5rem;
-  }
-}
 
-/* Small tablets */
-@media (max-width: 360px) {
+@media (max-width: 480px) {
   .container-login {
-    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 56px 16px 122px 16px;
+    padding: 1rem 0.5rem;
+    border-radius: 32px;
   }
+
 }

@@ -33,8 +33,8 @@ const PaginaDeLogin = () => {
   return (
     <div className="container-login">
       <picture>
-        <source media="(max-width: 768px)" srcSet="/img/imagem-login-M.png" />
-        <source media="(max-width: 360px)" srcSet="/img/imagem-login-P.png" />
+        <source media="(max-width: 767px)" srcSet="/img/imagem-login-P.png" />
+        <source media="(max-width: 1199px)" srcSet="/img/imagem-login-M.png" />
         <img
           src="/img/imagem-login.png"
           alt="uma mulher negra de cabelos crespos usando óculos e mexendo no computador, também há o logo da codeconnect"
