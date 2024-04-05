@@ -150,3 +150,10 @@
   }
 
 }
+
+@media (min-width: 767px) and (max-width: 991px) {
+  .container-login {
+    flex-direction: column;
+    margin: 56px 16px 122px 16px;
+  }
+}

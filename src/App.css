@@ -55,3 +55,23 @@ body {
     height: auto;
   }
 }
+
+@media (min-width: 767px) and (max-width: 991px) {
+  body {
+    background: url("../img/simbolo-p.png") left 1rem top 0.5rem no-repeat,
+      url("../img/simbolo-p.png") right 1rem bottom -24rem no-repeat,
+      var(--grafite);
+    color: var(--branco);
+    font-family: var(--fonte);
+    height: 100vh;
+  }
+
+  #root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+}
+
